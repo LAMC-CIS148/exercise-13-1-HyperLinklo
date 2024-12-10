@@ -71,26 +71,32 @@
 				<fieldset>
  <legend>Payment Method</legend>
   <input type="radio" id="html" name="fav_language" value="HTML">
-  <label for="html">Bill me</label><br>
+  <label for="html">Bill me:</label><br>
   <input type="radio" id="css" name="fav_language" value="CSS">
-  <label for="css">Credit Card</label><br>
+  <label for="css">Credit Card:</label><br>
 				</fieldset>	
 			
 				<fieldset>
+				<legend>Credit Card Information</legend>	
 				<label for="membership_type"> Visa:</label>
 				<select name="membership_type" id="membership_type">
 				<option value="j">Master Card</option>
 				<option value="r">Discover</option>            
 				<option value="c">Paypal</option>	
 				<label for="state">Card Number</label>
-				<input type="text" name="states" id="state" required maxlength="2" placeholder="16 digits"><br>
+				<input type="text" name="states" id="state" required maxlength="16" placeholder="16 digits">
 
-				<label for="membership_type"> Order Type:</label>
+				<label for="membership_type">Expiration date</label>
 					<select name="membership_type" id="membership_type">
-				    	<option value="j">Member Package</option>
-				    	<option value="r">Donor Package</option>            
-				    	<option value="c">Single Tickets</option>	
-					</select><br>	
+				    	<option value="j">Jan-Mar</option>
+				    	<option value="r">Apr-July</option>            
+				    	<option value="c">Aug-Dec</option>	
+					</select>
+					<select>
+					<option value="j">2028</option>
+				    	<option value="r">2029</option>            
+				    	<option value="c">2030</option>	
+					</select>
 				</fieldset>
 				<fieldset id="buttons">
 					<legend>Submit Your Membership</legend>
